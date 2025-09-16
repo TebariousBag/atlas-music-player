@@ -3,7 +3,7 @@ import Playlist from "./Playlist";
 
 export default function MusicPlayer() {
   return (
-    <div className="bg-picton-blue border-aero flex flex-col rounded-xl border-4 md:flex-row">
+    <div className="bg-picton-blue border-aero flex flex-col rounded-xl border-4 md:flex-row dark:border-gray-500 dark:bg-gray-600">
       <div className="w-full p-6 md:w-1/2">
         <CurrentlyPlaying />
       </div>
