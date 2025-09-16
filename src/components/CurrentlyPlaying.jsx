@@ -5,7 +5,7 @@ import VolumeControls from "./VolumeControls";
 
 export default function CurrentlyPlaying() {
   return (
-    <div className="w-full">
+    <div className="bg-picton-blue w-full">
       <CoverArt />
       <SongTitle />
       <PlayControls />

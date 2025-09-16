@@ -1,8 +1,8 @@
 export default function PlayListItem() {
   return (
-    <div className="flex cursor-pointer items-center justify-between rounded-lg hover:bg-gray-100">
+    <div className="hover:bg-picton-blue flex cursor-pointer items-center justify-between rounded-lg p-2">
       <div>
-        <p className="font-medium">Painted in Blue</p>
+        <p className="text-french-blue font-medium">Painted in Blue</p>
         <p className="text-sm text-slate-500">Soul Canvas</p>
       </div>
       <div>
