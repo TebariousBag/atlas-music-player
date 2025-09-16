@@ -7,10 +7,10 @@ function App() {
   return (
     <div className="flex h-full min-h-screen flex-col justify-between p-8">
       <div className="flex">
-        <div>
+        <div className="w-full">
           <CurrentlyPlaying />
         </div>
-        <div>
+        <div className="w-full">
           <Playlist />
         </div>
       </div>
