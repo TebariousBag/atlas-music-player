@@ -3,7 +3,7 @@ import { Volume2 } from "lucide-react";
 export default function VolumeControls() {
   return (
     <div className="my-4 flex w-full items-center">
-      <Volume2 />
+      <Volume2 className="mx-2 fill-black" />
       <input
         type="range"
         min="0"
