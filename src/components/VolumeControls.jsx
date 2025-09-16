@@ -2,9 +2,14 @@ import { Volume2 } from "lucide-react";
 
 export default function VolumeControls() {
   return (
-    <div className="flex items-center">
+    <div className="my-4 flex w-full items-center">
       <Volume2 />
-      <input type="range" />
+      <input
+        type="range"
+        min="0"
+        max="100"
+        className="slider w-full cursor-pointer accent-gray-500"
+      />
     </div>
   );
 }

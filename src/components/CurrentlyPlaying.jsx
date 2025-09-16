@@ -9,7 +9,7 @@ export default function CurrentlyPlaying() {
       <CoverArt />
       <SongTitle />
       <PlayControls />
-      <VolumeControls />
+      <VolumeControls className="w-full" />
     </div>
   );
 }
