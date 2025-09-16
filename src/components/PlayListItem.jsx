@@ -1,12 +1,12 @@
 export default function PlayListItem() {
   return (
-    <div className="flex items-center">
+    <div className="flex cursor-pointer items-center justify-between rounded-lg hover:bg-gray-100">
       <div>
-        <p>Painted in Blue</p>
-        <p className="text-slate-500">Soul Canvas</p>
+        <p className="font-medium">Painted in Blue</p>
+        <p className="text-sm text-slate-500">Soul Canvas</p>
       </div>
       <div>
-        <p>5:55</p>
+        <p className="text-sm text-slate-500">5:55</p>
       </div>
     </div>
   );
