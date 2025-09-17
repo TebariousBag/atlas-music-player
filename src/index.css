@@ -2,12 +2,12 @@
 
 @theme {
   --color-french-blue: #1c77c3;
-  --color-picton-blue: #39A9DB;
-  --color-aero: #40BCD8;
-  --color-tiffany: #A6ECE0;
-  --color-carrot-orange: #F39237;
-  --color-persian-red #D63230;
-  --color-mimi-pink: #EDD2E0;
+  --color-picton-blue: #39a9db;
+  --color-aero: #40bcd8;
+  --color-tiffany: #a6ece0;
+  --color-carrot-orange: #f39237;
+  --color-persian-red: #d63230;
+  --color-mimi-pink: #edd2e0;
 
   --font-poppins: Poppins, sans-serif;
 }
