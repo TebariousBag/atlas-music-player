@@ -1,11 +1,19 @@
 import { SkipBack, Pause, Play, SkipForward, Shuffle } from "lucide-react";
+import { PlayControlsProps } from "../types";
 
-export default function PlayControls() {
+export default function PlayControls({
+  playSpeed,
+  onChangeSpeed,
+}: PlayControlsProps) {
   return (
     <div className="flex w-full items-center justify-between">
-      <p className="text-french-blue mx-2 text-center text-2xl font-bold dark:text-gray-300">
-        1x
-      </p>
+      <button
+        className="text-french-blue mx-2 text-center text-2xl font-bold dark:text-gray-300"
+        onClick={onChangeSpeed}
+      >
+        {playSpeed}x
+      </button>
+
       <button className="mx-2 cursor-pointer rounded">
         <SkipBack className="fill-french-blue text-french-blue dark:fill-gray-300 dark:text-gray-300" />
       </button>

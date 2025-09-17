@@ -26,3 +26,8 @@ export interface CoverArtProps {
 export interface SongTitleProps {
   selectedSong?: Song | null;
 }
+
+export interface PlayControlsProps {
+  playSpeed: number;
+  onChangeSpeed: () => void;
+}
