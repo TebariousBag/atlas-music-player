@@ -22,3 +22,7 @@ export interface Lyrics {
 export interface CoverArtProps {
   selectedSong?: Song | null;
 }
+
+export interface SongTitleProps {
+  selectedSong?: Song | null;
+}
