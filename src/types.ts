@@ -29,7 +29,9 @@ export interface SongTitleProps {
 
 export interface PlayControlsProps {
   playSpeed: number;
-  goBack: boolean;
+  canGoBack: boolean;
+  canGoForward: boolean;
   onChangeSpeed: () => void;
-  onBack: () => void;
+  ongoBack: () => void;
+  ongoForward: () => void;
 }
