@@ -6,10 +6,12 @@ export default function PlayControls({
   canGoBack,
   canGoForward,
   isShuffleOn,
+  isPlaying,
   onChangeSpeed,
   ongoBack,
   ongoForward,
   onShuffleToggle,
+  onPlayPause,
 }: PlayControlsProps) {
   return (
     <div className="flex w-full items-center justify-between">
@@ -29,14 +31,21 @@ export default function PlayControls({
       </button>
 
       <button
+        onClick={onPlayPause}
+        className="mx-2 cursor-pointer rounded-xl border-2 p-4 hover:opacity-50 dark:border-gray-300"
+      >
+        {isPlaying ? (
+          <Pause className="fill-french-blue text-french-blue dark:fill-gray-300 dark:text-gray-300" />
+        ) : (
+          <Play className="fill-french-blue text-french-blue dark:fill-gray-300 dark:text-gray-300" />
+        )}
+      </button>
+
+      <button
         onClick={ongoForward}
         disabled={!canGoForward}
         className={`${canGoForward ? "cursor-pointer" : "cursor-not-allowed opacity-50"} mx-2 cursor-pointer rounded-xl border-2 p-4 dark:border-gray-300`}
       >
-        <Play className="fill-french-blue text-french-blue dark:fill-gray-300 dark:text-gray-300" />
-      </button>
-
-      <button className="mx-2 cursor-pointer rounded">
         <SkipForward className="fill-french-blue text-french-blue dark:fill-gray-300 dark:text-gray-300" />
       </button>
 

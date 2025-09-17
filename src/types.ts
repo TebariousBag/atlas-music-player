@@ -32,8 +32,10 @@ export interface PlayControlsProps {
   canGoBack: boolean;
   canGoForward: boolean;
   isShuffleOn: boolean;
+  isPlaying: boolean;
   onChangeSpeed: () => void;
   ongoBack: () => void;
   ongoForward: () => void;
   onShuffleToggle: () => void;
+  onPlayPause: () => void;
 }
