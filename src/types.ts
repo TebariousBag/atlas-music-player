@@ -29,5 +29,7 @@ export interface SongTitleProps {
 
 export interface PlayControlsProps {
   playSpeed: number;
+  goBack: boolean;
   onChangeSpeed: () => void;
+  onBack: () => void;
 }
