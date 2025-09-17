@@ -5,9 +5,11 @@ export default function PlayControls({
   playSpeed,
   canGoBack,
   canGoForward,
+  isShuffleOn,
   onChangeSpeed,
   ongoBack,
   ongoForward,
+  onShuffleToggle,
 }: PlayControlsProps) {
   return (
     <div className="flex w-full items-center justify-between">
@@ -37,7 +39,15 @@ export default function PlayControls({
       <button className="mx-2 cursor-pointer rounded">
         <SkipForward className="fill-french-blue text-french-blue dark:fill-gray-300 dark:text-gray-300" />
       </button>
-      <button className="fill-french-blue text-french-blue mx-2 cursor-pointer rounded dark:fill-gray-300 dark:text-gray-300">
+
+      <button
+        onClick={onShuffleToggle}
+        className={`mx-2 cursor-pointer rounded hover:opacity-50 ${
+          isShuffleOn
+            ? "text-blue-600 dark:text-blue-400"
+            : "text-french-blue dark:text-gray-300"
+        }`}
+      >
         <Shuffle />
       </button>
     </div>
