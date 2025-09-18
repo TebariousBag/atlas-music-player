@@ -39,3 +39,14 @@ export interface PlayControlsProps {
   onShuffleToggle: () => void;
   onPlayPause: () => void;
 }
+
+export interface VolumeControlsProps {
+  volume: number;
+  onVolumeChange: (volume: number) => void;
+}
+
+export interface PlaylistItemProps {
+  title: string;
+  artist: string;
+  duration: number;
+}
