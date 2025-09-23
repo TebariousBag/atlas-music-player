@@ -19,7 +19,7 @@ export default function PlayControls({
         className="text-french-blue mx-2 text-center text-2xl font-bold dark:text-gray-300"
         onClick={onChangeSpeed}
       >
-        {playSpeed}1x
+        {playSpeed}x
       </button>
 
       <button

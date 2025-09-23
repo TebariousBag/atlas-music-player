@@ -66,7 +66,6 @@ export default function CurrentlyPlaying({
         onPlayPause={onPlayPause}
       />
       <VolumeControls volume={volume} onVolumeChange={onVolumeChange} />
-      <VolumeControls className="w-full" />
     </div>
   );
 }
