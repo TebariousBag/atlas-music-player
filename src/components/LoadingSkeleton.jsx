@@ -3,7 +3,7 @@ import PlayControlsDark from "./PlayControlsDark";
 
 export default function LoadingSkeleton() {
   return (
-    <div className="flex animate-pulse">
+    <div className="flex min-h-screen animate-pulse items-center justify-center">
       {/* Left container */}
       <div className="flex h-[600px] w-[600px] flex-col items-center justify-center bg-gray-50">
         <div>
