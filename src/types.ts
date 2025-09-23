@@ -49,4 +49,16 @@ export interface PlaylistItemProps {
   title: string;
   artist: string;
   duration: number;
+  song: PlaylistSong;
+  isSelected: boolean;
+  onClick: () => void;
+}
+
+export interface PlaylistProps {
+  songs: PlaylistSong[];
+  selectedSongId: string | null;
+  onSongSelect: (songId: string) => void;
+}
+
+export interface MusicPlayerProps {
 }

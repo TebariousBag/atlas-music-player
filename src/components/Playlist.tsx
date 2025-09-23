@@ -1,6 +1,11 @@
 import PlayListItem from "./PlayListItem";
+import { PlaylistProps } from "../types";
 
-export default function Playlist() {
+export default function Playlist({
+  songs,
+  selectedSongId,
+  onSongSelect,
+}: PlaylistProps) {
   return (
     <div className="border-aero h-full rounded border-4 bg-blue-200 p-4 dark:border-gray-500 dark:bg-gray-600">
       <div>
@@ -9,16 +14,14 @@ export default function Playlist() {
         </p>
       </div>
       <div className="space-y-2">
-        <PlayListItem />
-        <PlayListItem />
-        <PlayListItem />
-        <PlayListItem />
-        <PlayListItem />
-        <PlayListItem />
-        <PlayListItem />
-        <PlayListItem />
-        <PlayListItem />
-        <PlayListItem />
+        {songs.map((song) => (
+          <PlayListItem
+            key={song.id}
+            song={song}
+            isSelected={selectedSongId === song.id}
+            onClick={() => onSongSelect(song.id)}
+          />
+        ))}
       </div>
     </div>
   );
