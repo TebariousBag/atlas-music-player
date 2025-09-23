@@ -60,5 +60,13 @@ export interface PlaylistProps {
   onSongSelect: (songId: string) => void;
 }
 
-export interface MusicPlayerProps {
+export interface MusicPlayerProps {}
+
+export interface AudioPlayerProps {
+  selectedSong: PlaylistSong | null;
+  isPlaying: boolean;
+  volume: number;
+  playSpeed: number;
+  onSongEnd: () => void;
+  onTimeUpdate: (currentTime: number, duration: number) => void;
 }

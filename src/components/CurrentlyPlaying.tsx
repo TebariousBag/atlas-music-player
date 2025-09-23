@@ -7,10 +7,22 @@ import { PlaylistSong, Song } from "../types";
 
 interface CurrentlyPlayingProps {
   selectedSong: PlaylistSong | null;
+  isPlaying: boolean;
+  volume: number;
+  playSpeed: number;
+  onPlayPause: () => void;
+  onVolumeChange: (volume: number) => void;
+  onSpeedChange: () => void;
 }
 
 export default function CurrentlyPlaying({
   selectedSong,
+  isPlaying,
+  volume,
+  playSpeed,
+  onPlayPause,
+  onVolumeChange,
+  onSpeedChange,
 }: CurrentlyPlayingProps) {
   const [fullSongData, setFullSongData] = useState<Song | null>(null);
 
@@ -41,7 +53,19 @@ export default function CurrentlyPlaying({
     <div className="bg-picton-blue w-full dark:border-gray-500 dark:bg-gray-600">
       <CoverArt selectedSong={fullSongData} />
       <SongTitle selectedSong={fullSongData} />
-      <PlayControls />
+      <PlayControls
+        playSpeed={playSpeed}
+        canGoBack={false}
+        canGoForward={false}
+        isShuffleOn={false}
+        isPlaying={isPlaying}
+        onChangeSpeed={onSpeedChange}
+        ongoBack={() => {}}
+        ongoForward={() => {}}
+        onShuffleToggle={() => {}}
+        onPlayPause={onPlayPause}
+      />
+      <VolumeControls volume={volume} onVolumeChange={onVolumeChange} />
       <VolumeControls className="w-full" />
     </div>
   );
