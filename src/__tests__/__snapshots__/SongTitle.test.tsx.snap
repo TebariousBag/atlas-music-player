@@ -1,0 +1,103 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SongTitle > renders with empty title and artist 1`] = `
+<div
+  class="border-aero my-6 flex flex-col rounded-xl border-4 bg-blue-200 p-4 text-left dark:border-gray-500 dark:bg-gray-600"
+>
+  <h2
+    class="text-french-blue my-2 text-4xl font-bold dark:text-gray-300"
+  >
+    Song not selected
+  </h2>
+  <p
+    class="my-2 text-xl text-slate-500 dark:text-gray-400"
+  >
+    No artist selected
+  </p>
+</div>
+`;
+
+exports[`SongTitle > renders with long title and artist 1`] = `
+<div
+  class="border-aero my-6 flex flex-col rounded-xl border-4 bg-blue-200 p-4 text-left dark:border-gray-500 dark:bg-gray-600"
+>
+  <h2
+    class="text-french-blue my-2 text-4xl font-bold dark:text-gray-300"
+  >
+    This is a very long song title that might wrap to multiple lines and test the layout
+  </h2>
+  <p
+    class="my-2 text-xl text-slate-500 dark:text-gray-400"
+  >
+    This is a very long artist name that might also wrap and test the layout
+  </p>
+</div>
+`;
+
+exports[`SongTitle > renders with placeholder text when no song is selected 1`] = `
+<div
+  class="border-aero my-6 flex flex-col rounded-xl border-4 bg-blue-200 p-4 text-left dark:border-gray-500 dark:bg-gray-600"
+>
+  <h2
+    class="text-french-blue my-2 text-4xl font-bold dark:text-gray-300"
+  >
+    Song not selected
+  </h2>
+  <p
+    class="my-2 text-xl text-slate-500 dark:text-gray-400"
+  >
+    No artist selected
+  </p>
+</div>
+`;
+
+exports[`SongTitle > renders with placeholder text when song is undefined 1`] = `
+<div
+  class="border-aero my-6 flex flex-col rounded-xl border-4 bg-blue-200 p-4 text-left dark:border-gray-500 dark:bg-gray-600"
+>
+  <h2
+    class="text-french-blue my-2 text-4xl font-bold dark:text-gray-300"
+  >
+    Song not selected
+  </h2>
+  <p
+    class="my-2 text-xl text-slate-500 dark:text-gray-400"
+  >
+    No artist selected
+  </p>
+</div>
+`;
+
+exports[`SongTitle > renders with song title and artist 1`] = `
+<div
+  class="border-aero my-6 flex flex-col rounded-xl border-4 bg-blue-200 p-4 text-left dark:border-gray-500 dark:bg-gray-600"
+>
+  <h2
+    class="text-french-blue my-2 text-4xl font-bold dark:text-gray-300"
+  >
+    Test Song
+  </h2>
+  <p
+    class="my-2 text-xl text-slate-500 dark:text-gray-400"
+  >
+    Test Artist
+  </p>
+</div>
+`;
+
+exports[`SongTitle > renders with special characters in title and artist 1`] = `
+<div
+  class="border-aero my-6 flex flex-col rounded-xl border-4 bg-blue-200 p-4 text-left dark:border-gray-500 dark:bg-gray-600"
+>
+  <h2
+    class="text-french-blue my-2 text-4xl font-bold dark:text-gray-300"
+  >
+    Song with "quotes" & symbols!
+  </h2>
+  <p
+    class="my-2 text-xl text-slate-500 dark:text-gray-400"
+  >
+    Artist with émojis 🎵 & symbols
+  </p>
+</div>
+`;

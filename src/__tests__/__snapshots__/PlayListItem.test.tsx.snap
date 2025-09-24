@@ -1,0 +1,131 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PlayListItem > renders selected song 1`] = `
+<div
+  class="flex cursor-pointer items-center justify-between rounded-lg p-2 transition-colors bg-picton-blue dark:bg-gray-700"
+>
+  <div>
+    <p
+      class="text-french-blue font-medium dark:text-gray-300"
+    >
+      Test Song
+    </p>
+    <p
+      class="text-sm text-slate-500 dark:text-gray-400"
+    >
+      Test Artist
+    </p>
+  </div>
+  <div>
+    <p
+      class="text-sm text-slate-500"
+    >
+      3:00
+    </p>
+  </div>
+</div>
+`;
+
+exports[`PlayListItem > renders song with long duration 1`] = `
+<div
+  class="flex cursor-pointer items-center justify-between rounded-lg p-2 transition-colors bg-picton-blue dark:bg-gray-700"
+>
+  <div>
+    <p
+      class="text-french-blue font-medium dark:text-gray-300"
+    >
+      Long Song
+    </p>
+    <p
+      class="text-sm text-slate-500 dark:text-gray-400"
+    >
+      Long Artist
+    </p>
+  </div>
+  <div>
+    <p
+      class="text-sm text-slate-500"
+    >
+      61:01
+    </p>
+  </div>
+</div>
+`;
+
+exports[`PlayListItem > renders song with long title and artist 1`] = `
+<div
+  class="flex cursor-pointer items-center justify-between rounded-lg p-2 transition-colors hover:bg-picton-blue dark:hover:bg-gray-900"
+>
+  <div>
+    <p
+      class="text-french-blue font-medium dark:text-gray-300"
+    >
+      This is a very long song title that might wrap to multiple lines
+    </p>
+    <p
+      class="text-sm text-slate-500 dark:text-gray-400"
+    >
+      This is a very long artist name that might also wrap
+    </p>
+  </div>
+  <div>
+    <p
+      class="text-sm text-slate-500"
+    >
+      5:00
+    </p>
+  </div>
+</div>
+`;
+
+exports[`PlayListItem > renders song with short duration 1`] = `
+<div
+  class="flex cursor-pointer items-center justify-between rounded-lg p-2 transition-colors hover:bg-picton-blue dark:hover:bg-gray-900"
+>
+  <div>
+    <p
+      class="text-french-blue font-medium dark:text-gray-300"
+    >
+      Short Song
+    </p>
+    <p
+      class="text-sm text-slate-500 dark:text-gray-400"
+    >
+      Short Artist
+    </p>
+  </div>
+  <div>
+    <p
+      class="text-sm text-slate-500"
+    >
+      0:45
+    </p>
+  </div>
+</div>
+`;
+
+exports[`PlayListItem > renders unselected song 1`] = `
+<div
+  class="flex cursor-pointer items-center justify-between rounded-lg p-2 transition-colors hover:bg-picton-blue dark:hover:bg-gray-900"
+>
+  <div>
+    <p
+      class="text-french-blue font-medium dark:text-gray-300"
+    >
+      Test Song
+    </p>
+    <p
+      class="text-sm text-slate-500 dark:text-gray-400"
+    >
+      Test Artist
+    </p>
+  </div>
+  <div>
+    <p
+      class="text-sm text-slate-500"
+    >
+      3:00
+    </p>
+  </div>
+</div>
+`;

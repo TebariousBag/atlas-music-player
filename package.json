@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest"
   },
   "dependencies": {
     "@tailwindcss/vite": "4.1.13",
@@ -16,9 +17,12 @@
     "react-dom": "19.0.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "6.8.0",
+    "@testing-library/react": "16.3.0",
     "@types/node": "22.10.5",
     "@types/react": "19.0.6",
     "@types/react-dom": "19.0.3",
+    "@types/testing-library__jest-dom": "5.14.9",
     "@typescript-eslint/eslint-plugin": "8.19.1",
     "@typescript-eslint/parser": "8.19.1",
     "@vitejs/plugin-react": "4.3.4",
@@ -26,11 +30,13 @@
     "eslint": "9.18.0",
     "eslint-plugin-react-hooks": "5.1.0",
     "eslint-plugin-react-refresh": "0.4.18",
+    "jsdom": "27.0.0",
     "postcss": "8.5.6",
     "prettier": "3.6.2",
     "prettier-plugin-tailwindcss": "0.6.14",
     "tailwindcss": "4.1.13",
     "typescript": "5.7.3",
-    "vite": "6.0.7"
+    "vite": "6.0.7",
+    "vitest": "3.2.4"
   }
 }
